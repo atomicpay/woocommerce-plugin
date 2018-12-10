@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 
     Version:           1.0.3
     License:           Copyright 2018 AtomicPay, MIT License
-    License URI:       https://github.com/atomicpayserver/woocommerce-plugin/blob/master/LICENSE
+    License URI:       https://github.com/atomicpay/woocommerce-plugin/blob/master/LICENSE
     GitHub Plugin URI: https://github.com/atomicpayserver/woocommerce-plugin
  */
 
@@ -776,17 +776,45 @@ function woocommerce_atomicpay_init()
 
 						case 'confirmed':
 							$this->log('[Info] The invoice status is confirmed. Order status has been set as confirmed');
-							if($confirmed_status !== 'ATOMICPAY_IGNORE')
-							$order->update_status($confirmed_status);
-							$order->add_order_note(__('AtomicPay invoice has been confirmed. Awaiting payment completion status.', 'atomicpay'));
+							if($atm_statusException != "")
+							{
+								if($atm_statusException == "Overpaid")
+								{
+									$this->log('[Info] The invoice is overpaid...');
+									if($exception_overPaid !== 'ATOMICPAY_IGNORE')
+									$order->update_status($exception_overPaid , __('The invoice is overpaid.', 'atomicpay'));
+									$order->add_order_note(__('The invoice is overpaid. Payment has been confirmed. Please contact customer on refund matters.', 'atomicpay'));
+								}
+							}
+							else
+							{
+								if($confirmed_status !== 'ATOMICPAY_IGNORE')
+								$order->update_status($confirmed_status);
+								$order->add_order_note(__('AtomicPay invoice has been confirmed. Awaiting payment completion status.', 'atomicpay'));
+							}
+
 							break;
 
 						case 'complete':
 							$this->log('[Info] The invoice status is completed. Order status has been set as completed');
-							$order->payment_complete();
-							if($complete_status !== 'ATOMICPAY_IGNORE')
-							$order->update_status($complete_status);
-							$order->add_order_note(__('AtomicPay invoice payment has completed', 'atomicpay'));
+							if($atm_statusException != "")
+							{
+								if($atm_statusException == "Overpaid")
+								{
+									$this->log('[Info] The invoice is overpaid...');
+									if($exception_overPaid !== 'ATOMICPAY_IGNORE')
+									$order->update_status($exception_overPaid , __('The invoice is overpaid.', 'atomicpay'));
+									$order->add_order_note(__('The invoice is overpaid. Payment has completed. Please contact customer on refund matters.', 'atomicpay'));
+								}
+							}
+							else
+							{
+								$order->payment_complete();
+								if($complete_status !== 'ATOMICPAY_IGNORE')
+								$order->update_status($complete_status);
+								$order->add_order_note(__('AtomicPay invoice payment has completed', 'atomicpay'));
+							}
+
 							break;
 
 						case 'invalid':

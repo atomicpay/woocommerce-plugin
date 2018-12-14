@@ -143,21 +143,19 @@ function woocommerce_atomicpay_init()
             try
             {
                 $currency_code = get_woocommerce_currency();
-                $endpoint_url = 'https://merchant.atomicpay.io/api/v1/currencies';
+                $AccountID = $this->api_accountID;
+                $AccountPrivateKey = $this->api_privateKey;
 
-                $data_to_post = [
-                  'method' => 'FETCH',
-                	'code' => $currency_code,
-                  'AccountID' => $this->api_accountID,
-                  'AccountPrivateKey' => $this->api_privateKey
-                ];
+				$param = "?code=$currency_code";
+				$endpoint_url = "https://merchant.atomicpay.io/api/v1/currencies$param";
+				$encoded_auth = base64_encode("$AccountID:$AccountPrivateKey");
+				$authorization = "Authorization: BASIC $encoded_auth";
 
-                $options = [
-                  CURLOPT_URL        => $endpoint_url,
-                  CURLOPT_POST       => true,
-                  CURLOPT_RETURNTRANSFER => true,
-                  CURLOPT_POSTFIELDS => $data_to_post,
-                ];
+				$options = [
+					CURLOPT_URL        => $endpoint_url,
+					CURLOPT_HTTPHEADER => array('Content-Type:application/json', $authorization),
+					CURLOPT_RETURNTRANSFER => true
+				];
 
                 $curl = curl_init();
                 curl_setopt_array($curl, $options);
@@ -491,12 +489,14 @@ function woocommerce_atomicpay_init()
                 $orderID = $order->get_order_number();
                 $notificationEmail = $order->get_billing_email();
                 $transactionSpeed = $this->transaction_speed;
-                $endpoint_url = 'https://merchant.atomicpay.io/api/v1/invoices';
+                $AccountID = $this->api_accountID;
+                $AccountPrivateKey = $this->api_privateKey;
+
+				$endpoint_url = "https://merchant.atomicpay.io/api/v1/invoices";
+				$encoded_auth = base64_encode("$AccountID:$AccountPrivateKey");
+				$authorization = "Authorization: BASIC $encoded_auth";
 
                 $data_to_post = [
-                  'method' => 'GENERATE',
-                  'AccountID' => $this->api_accountID,
-                  'AccountPrivateKey' => $this->api_privateKey,
                   'orderID' => $orderID,
                   'amount' => $order_total,
                   'currency' => $currency_code,
@@ -506,11 +506,14 @@ function woocommerce_atomicpay_init()
                   'transactionSpeed' => $transactionSpeed
                 ];
 
+                $data_to_post = json_encode($data_to_post);
+
                 $options = [
-                  CURLOPT_URL        => $endpoint_url,
-                  CURLOPT_POST       => true,
-                  CURLOPT_RETURNTRANSFER => true,
-                  CURLOPT_POSTFIELDS => $data_to_post,
+					CURLOPT_URL        => $endpoint_url,
+					CURLOPT_HTTPHEADER => array('Content-Type:application/json', $authorization),
+					CURLOPT_POST       => true,
+					CURLOPT_RETURNTRANSFER => true,
+					CURLOPT_POSTFIELDS => $data_to_post
                 ];
 
                 $curl = curl_init();
@@ -609,20 +612,16 @@ function woocommerce_atomicpay_init()
 			try
 			{
 				$invoice_id = $json->invoice_id;
-                $endpoint_url = 'https://merchant.atomicpay.io/api/v1/invoices';
-
-                $data_to_post = [
-                	'method' => 'FETCH',
-                	'InvoiceID' => $invoice_id,
-                  	'AccountID' => $this->api_accountID,
-                  	'AccountPrivateKey' => $this->api_privateKey,
-                ];
+                $AccountID = $this->api_accountID;
+                $AccountPrivateKey = $this->api_privateKey;
+				$endpoint_url = "https://merchant.atomicpay.io/api/v1/invoices/$invoice_id";
+				$encoded_auth = base64_encode("$AccountID:$AccountPrivateKey");
+				$authorization = "Authorization: BASIC $encoded_auth";
 
                 $options = [
-                	CURLOPT_URL        => $endpoint_url,
-                	CURLOPT_POST       => true,
-                	CURLOPT_RETURNTRANSFER => true,
-                	CURLOPT_POSTFIELDS => $data_to_post,
+					CURLOPT_URL        => $endpoint_url,
+					CURLOPT_HTTPHEADER => array('Content-Type:application/json', $authorization),
+					CURLOPT_RETURNTRANSFER => true
                 ];
 
                 $curl = curl_init();
@@ -993,7 +992,6 @@ function woocommerce_atomicpay_init()
             $endpoint_url = 'https://merchant.atomicpay.io/api/v1/authorization';
 
             $data_to_post = [
-              'method' => 'VALIDATE',
               'AccountID' => $accountID,
               'AccountPrivateKey' => $privateKey,
               'AccountPublicKey' => $publicKey

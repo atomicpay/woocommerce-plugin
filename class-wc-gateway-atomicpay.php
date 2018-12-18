@@ -146,8 +146,7 @@ function woocommerce_atomicpay_init()
                 $AccountID = $this->api_accountID;
                 $AccountPrivateKey = $this->api_privateKey;
 
-				$param = "?code=$currency_code";
-				$endpoint_url = "https://merchant.atomicpay.io/api/v1/currencies$param";
+				$endpoint_url = "https://merchant.atomicpay.io/api/v1/currencies/$currency_code";
 				$encoded_auth = base64_encode("$AccountID:$AccountPrivateKey");
 				$authorization = "Authorization: BASIC $encoded_auth";
 
@@ -497,13 +496,13 @@ function woocommerce_atomicpay_init()
 				$authorization = "Authorization: BASIC $encoded_auth";
 
                 $data_to_post = [
-                  'orderID' => $orderID,
-                  'amount' => $order_total,
-                  'currency' => $currency_code,
-                  'notificationEmail' => $notificationEmail,
-                  'notificationUrl' => $notification_url,
-                  'redirectUrl' => $redirect_url,
-                  'transactionSpeed' => $transactionSpeed
+                  'order_id' => $orderID,
+                  'order_price' => $order_total,
+                  'order_currency' => $currency_code,
+                  'notification_email' => $notificationEmail,
+                  'notification_url' => $notification_url,
+                  'redirect_url' => $redirect_url,
+                  'transaction_speed' => $transactionSpeed
                 ];
 
                 $data_to_post = json_encode($data_to_post);
@@ -641,8 +640,8 @@ function woocommerce_atomicpay_init()
                   	$atm_invoice_id = $result_array->invoice_id;
                 	$atm_order_id = $result_array->order_id;
                 	$atm_order_description = $result_array->order_description;
-                	$atm_fiat_price = $result_array->fiat_price;
-                	$atm_fiat_currency = $result_array->fiat_currency;
+                	$atm_order_price = $result_array->order_price;
+                	$atm_order_currency = $result_array->order_currency;
                 	$atm_transaction_speed = $result_array->transaction_speed;
                 	$atm_payment_currency = $result_array->payment_currency;
                 	$atm_payment_rate = $result_array->payment_rate;
@@ -657,7 +656,7 @@ function woocommerce_atomicpay_init()
                 	$atm_redirect_url = $result_array->redirect_url;
                 	$atm_status = $result_array->status;
                 	$atm_statusException = $result_array->statusException;
-                	$atm_payment_rate = "$atm_payment_rate $atm_fiat_currency";
+                	$atm_payment_rate = "$atm_payment_rate $atm_order_currency";
 
                     $this->log('[Info] The Invoice ID is valid.');
 

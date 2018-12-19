@@ -18,7 +18,7 @@ This is an open source plugin for WooCommerce, allowing merchants to start accep
 AtomicPay For WooCommerce Plugin is designed to be **"Plug-n-Play" installation** without any programming knowledge. Anyone can do it! To set up our plugin quickly, please follow the following guide.
 
 - You must have a AtomicPay merchant account and API keys to use this plugin. It's free to [sign-up for a AtomicPay merchant account](https://atomicpay.io/beta-registration)
-- Once registered, you may retrieve the API keys by [login to merchant control panel](https://merchant.atomicpay.io/login) -> API Integration page. If your key becomes compromised, you may revoke the keys by regenerating new set of keys.
+- Once registered, you may retrieve the API keys by login to [AtomicPay Merchant Account](https://merchant.atomicpay.io/login) and go to [API Integration](https://merchant.atomicpay.io/apiIntegration) page. If your key becomes compromised, you may revoke the keys by regenerating new set of keys.
 
 ## Installation
 Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) page of this repository and download the latest version. Once this is done, you can just go to Wordpress's **Adminstration Panels > Plugins > Add New > Upload Plugin**, select the downloaded file and click **Install Now**. After the plugin is installed, click on **Activate**.

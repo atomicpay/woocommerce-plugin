@@ -73,11 +73,11 @@ AtomicPay for WooCommerce Plugin is designed with an easy-to-understand and deta
 ![Debug Log](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-7.png)
 
 ## Contributions & Developments
-Anyone and everyone is welcome to contribute or develop libraries for the programming languages. Please take a moment to review the [guidelines for contributing to AtomicPay API Client](https://github.com/atomicpay/RESTful-API-client/blob/master/CONTRIBUTING.md).
+Anyone and everyone is welcome to contribute or develop libraries for the programming languages. Please take a moment to review the [guidelines for contributing to AtomicPay for WooCommerce Plugin](https://github.com/atomicpay/woocommerce-plugin/blob/master/CONTRIBUTING.md).
 
 - [Bug reports](CONTRIBUTING.md#bugs)
 - [Feature requests](CONTRIBUTING.md#features)
 - [Pull requests](CONTRIBUTING.md#pull-requests)
 
 ## License
-AtomicPay is released under the MIT License. Please refer to the [License](https://github.com/atomicpay/RESTful-API-client/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.
+AtomicPay is released under the MIT License. Please refer to the [License](https://github.com/atomicpay/woocommerce-plugin/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.

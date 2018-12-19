@@ -35,6 +35,16 @@ Login to your [AtomicPay merchant account](https://merchant.atomicpay.io/login) 
 ![API Keys](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/getting-keys.png)
 
 #### STEP 2
-Here you will need to copy and paste the values from Step 1 into the corresponding fields: Account ID, Private Key and Public Key.
+Here you will need to copy and paste the values from STEP 1 into the corresponding fields: Account ID, Private Key and Public Key.
 
 ![Step 1](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-1.png)
+
+#### STEP 3
+Click on the button Request Authorization. The plugin will attempt to connect to AtomicPay Server for an authorization.
+
+![Step 2](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-2.png)
+
+#### STEP 4
+Once authorization is successful, you should see the following dialog popup.
+
+![Step 3](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-3.png)

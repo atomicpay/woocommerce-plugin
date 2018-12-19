@@ -25,8 +25,8 @@ Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) p
 
 **WARNING:** It is good practice to backup your databases before installing plugins. Please make sure you have created backups.
 
-## Configuration
-Configuration can be performed using the Administrator section of Wordpress.
+## Authorization Pairing
+Authorization Pairing can be performed using the Administrator section of Wordpress.
 Once logged in, you can find the configuration settings under **WooCommerce > Settings > Payments > AtomicPay**.
 
 #### STEP 1
@@ -44,12 +44,12 @@ Click on the button **Request Authorization**. The plugin will attempt to connec
 
 ![Step 2](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-2.png)
 
-#### STEP 4
+#### FINAL STEP
 Once authorization is successful, you should see the following dialog popup.
 
 ![Step 3](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-3.png)
 
-#### FINAL STEP
+## Configuration
 Next, we will need you to select a default **Transaction Speed** value. `HIGH Risk` speed require 1 confirmation, and can be used for digital goods or low-risk items. `MEDIUM Risk` speed require at least 2 confirmations, and should be used for mid-value items. `LOW Risk` speed require at least 6 confirmations (averaging 30 mins, depending on selected cryptocurrency), and should be used for high-value items.
 
 ![Step 4](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-4.png)

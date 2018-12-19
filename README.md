@@ -68,5 +68,16 @@ Once selected, click **Save Changes** at the bottom of the page. Congrats your p
 Once activated, your customers will be given the option to pay via AtomicPay which will redirect them to AtomicPay checkout UI to complete the payment. On your WooCommerce backend, everything remains the same as how you would use other payment processors such as PayPal, etc. AtomicPay is designed to be an addtional option on top of the existing payment options which you are already offering. That will be no conflicts with other plugins.
 
 ## Troubleshooting and Debugging
-AtomicPay for WooCommerce Plugin is designed with an easy-to-understand and detailed debug logging feature. In the event where you experience issues or bugs, please activate the Debug Log option and replicate the issue. Click on View Logs and you will be able to detect any events associated with [Error]. Open an issue in this repository and paste your logs. Our team or the community will help you resolve the issue.
+AtomicPay for WooCommerce Plugin is designed with an easy-to-understand and detailed debug logging feature. In the event where you experience issues or bugs, please activate the Debug Log option and replicate the issue. Click on View Logs and you will be able to detect any events associated with [Error]. Open an issue with your debug logs by following our [Bug Reporting Guidelines](CONTRIBUTING.md#bugs)
+
 ![Debug Log](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-7.png)
+
+## Contributions & Developments
+Anyone and everyone is welcome to contribute or develop libraries for the programming languages. Please take a moment to review the [guidelines for contributing to AtomicPay API Client](https://github.com/atomicpay/RESTful-API-client/blob/master/CONTRIBUTING.md).
+
+- [Bug reports](CONTRIBUTING.md#bugs)
+- [Feature requests](CONTRIBUTING.md#features)
+- [Pull requests](CONTRIBUTING.md#pull-requests)
+
+## License
+AtomicPay is released under the MIT License. Please refer to the [License](https://github.com/atomicpay/RESTful-API-client/blob/master/LICENSE) file that accompanies this project for more information including complete terms and conditions.

@@ -24,3 +24,7 @@ AtomicPay For WooCommerce Plugin is designed to be "Plug-n-Play" installation wi
 Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) page of this repository and download the latest version. Once this is done, you can just go to Wordpress's Adminstration Panels > Plugins > Add New > Upload Plugin, select the downloaded file and click Install Now. After the plugin is installed, click on Activate.
 
 **WARNING:** It is good practice to backup your databases before installing plugins. Please make sure you have created backups.
+
+## Configuration
+Configuration can be performed using the Administrator section of Wordpress.
+Once logged in, you can find the configuration settings under **WooCommerce > Settings > Payments > AtomicPay**.

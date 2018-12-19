@@ -28,3 +28,28 @@ Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) p
 ## Configuration
 Configuration can be performed using the Administrator section of Wordpress.
 Once logged in, you can find the configuration settings under **WooCommerce > Settings > Payments > AtomicPay**.
+
+#### STEP 1
+Login to your [AtomicPay merchant account](https://merchant.atomicpay.io/login) and go to [API Integration](https://merchant.atomicpay.io/apiIntegration) page. You will need the following vvalues for next step: ACCOUNT ID, PRIVATE KEY and PUBLIC KEY.
+
+![API Keys](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/getting-keys.png)
+
+#### STEP 2
+Here you will need to copy and paste the values from STEP 1 into the corresponding fields: Account ID, Private Key and Public Key.
+
+![Step 1](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-1.png)
+
+#### STEP 3
+Click on the button Request Authorization. The plugin will attempt to connect to AtomicPay Server for an authorization.
+
+![Step 2](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-2.png)
+
+#### STEP 4
+Once authorization is successful, you should see the following dialog popup.
+
+![Step 3](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-3.png)
+
+#### FINAL STEP
+Next, we will need you to select a default Transaction Speed value. 
+The transaction speed for payment invoice. Can be `high`, `medium`, or `low`. HIGH speed require 1 confirmation, and can be used for digital goods or low-risk items. MEDIUM speed require at least 2 confirmations, and should be used for mid-value items. LOW speed require at least 6 confirmations (averaging 30 mins, depending on selected cryptocurrency), and should be used for high-value items. If missing, then default account transaction speed will apply
+![Step 4](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-4.png)

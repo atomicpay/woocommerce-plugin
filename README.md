@@ -1,3 +1,10 @@
 ![AtomicPay](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/atomicpay-plugin-header.png)
-# AtomicPay For WooCommerce Plugin
-This is an open source plugin for WooCommerce, allowing merchants to accept cryptocurrency payments within minutes. AtomicPay is a decentralized cryptocurrency payment processor that eliminates the involvement of a third-party gateway, allowing merchants to accept payments directly from their customers, in a secured and trustless environment.
+## AtomicPay For WooCommerce Plugin
+This is an open source plugin for WooCommerce, allowing merchants to start accepting cryptocurrency payments on their woocommerce website by simply installing the plugin. AtomicPay is a decentralized cryptocurrency payment processor that eliminates the involvement of a third-party payment gateway, allowing merchants to accept payments directly from their customers, in a secured and trustless environment.
+
+## Getting Started
+You must have a AtomicPay merchant account to use this plugin. It's free to [sign-up for a AtomicPay merchant account](https://atomicpay.io/beta-registration)
+
+
+### API Keys
+You can retrieve the API keys by [login to merchant control panel](https://merchant.atomicpay.io/) -> API Integration page. If your key becomes compromised, you may revoke the keys by regenerating new set of keys.

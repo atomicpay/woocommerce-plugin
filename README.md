@@ -63,3 +63,10 @@ Here you You can configure how AtomicPay's IPN (Instant Payment Notifications) t
 Once selected, click **Save Changes** at the bottom of the page. Congrats your plugin is activated and the Pay with AtomicPay option will be available during your customer checkout process.
 
 ![Save Changes](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-5.png)
+
+## Usage
+Once activated, your customers will be given the option to pay via AtomicPay which will redirect them to AtomicPay checkout UI to complete the payment. On your WooCommerce backend, everything remains the same as how you would use other payment processors such as PayPal, etc. AtomicPay is designed to be an addtional option on top of the existing payment options which you are already offering. That will be no conflicts with other plugins.
+
+## Troubleshooting and Debugging
+AtomicPay for WooCommerce Plugin is designed with an easy-to-understand and detailed debug logging feature. In the event where you experience issues or bugs, please activate the Debug Log option and replicate the issue. Click on View Logs and you will be able to detect any events associated with [Error]. Open an issue in this repository and paste your logs. Our team or the community will help you resolve the issue.
+![Debug Log](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-7.png)

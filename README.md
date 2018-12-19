@@ -48,3 +48,8 @@ Click on the button Request Authorization. The plugin will attempt to connect to
 Once authorization is successful, you should see the following dialog popup.
 
 ![Step 3](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-3.png)
+
+#### FINAL STEP
+Next, we will need you to select a default Transaction Speed value. 
+The transaction speed for payment invoice. Can be `high`, `medium`, or `low`. HIGH speed require 1 confirmation, and can be used for digital goods or low-risk items. MEDIUM speed require at least 2 confirmations, and should be used for mid-value items. LOW speed require at least 6 confirmations (averaging 30 mins, depending on selected cryptocurrency), and should be used for high-value items. If missing, then default account transaction speed will apply
+![Step 4](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-4.png)

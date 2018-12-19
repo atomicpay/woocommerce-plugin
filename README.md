@@ -68,7 +68,7 @@ Once selected, click **Save Changes** at the bottom of the page. Congrats your p
 Once activated, your customers will be given the option to pay via AtomicPay which will redirect them to AtomicPay checkout UI to complete the payment. On your WooCommerce backend, everything remains the same as how you would use other payment processors such as PayPal, etc. AtomicPay is designed to be an addtional option on top of the existing payment options which you are already offering. That will be no conflicts with other plugins.
 
 ## Installing GMP extension for PHP
-You may have to install GMP as most servers do not come with it. It is required that you install the GMP extension for PHP to acheive maximum performance when using this plugin. Below is a simple guide. If you do not have knowledge on server, please contact your hosting company to have it installed and activated.
+You may have to install GMP as most servers do not come with it. It is required that you install the GMP extension for PHP to achieve maximum performance when using this plugin. Below is a simple guide. If you do not have knowledge on server, please contact your hosting company to have it installed and activated.
 
 ### Compile PHP with GMP
 
@@ -114,7 +114,7 @@ AtomicPay for WooCommerce Plugin is designed with an easy-to-understand and deta
 ![Debug Log](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-7.png)
 
 ## Contributions & Developments
-Anyone and everyone is welcome to contribute or develop libraries for the programming languages. Please take a moment to review the [guidelines for contributing to AtomicPay for WooCommerce Plugin](https://github.com/atomicpay/woocommerce-plugin/blob/master/CONTRIBUTING.md).
+Anyone and everyone is welcome to contribute or develop for this plugin. Please take a moment to review the [guidelines for contributing to AtomicPay for WooCommerce Plugin](https://github.com/atomicpay/woocommerce-plugin/blob/master/CONTRIBUTING.md).
 
 - [Bug reports](CONTRIBUTING.md#bugs)
 - [Feature requests](CONTRIBUTING.md#features)

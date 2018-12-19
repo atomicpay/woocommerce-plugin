@@ -28,3 +28,6 @@ Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) p
 ## Configuration
 Configuration can be performed using the Administrator section of Wordpress.
 Once logged in, you can find the configuration settings under **WooCommerce > Settings > Payments > AtomicPay**.
+
+Here you will need to input 3 values: Account ID, Private Key and Public Key. These API values can be obtained by by [login to merchant control panel](https://merchant.atomicpay.io/) -> API Integration page
+![Step 1](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/atomicpay-plugin-header.png)

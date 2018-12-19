@@ -991,9 +991,9 @@ function woocommerce_atomicpay_init()
             $endpoint_url = 'https://merchant.atomicpay.io/api/v1/authorization';
 
             $data_to_post = [
-              'AccountID' => $accountID,
-              'AccountPrivateKey' => $privateKey,
-              'AccountPublicKey' => $publicKey
+              'account_id' => $accountID,
+              'account_privateKey' => $privateKey,
+              'account_publicKey' => $publicKey
             ];
 
             $options = [
@@ -1002,6 +1002,8 @@ function woocommerce_atomicpay_init()
               CURLOPT_RETURNTRANSFER => true,
               CURLOPT_POSTFIELDS => $data_to_post,
             ];
+
+
 
             $curl = curl_init();
             curl_setopt_array($curl, $options);

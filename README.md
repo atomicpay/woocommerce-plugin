@@ -2,6 +2,8 @@
 ## AtomicPay For WooCommerce Plugin
 This is an open source plugin for WooCommerce, allowing merchants to start accepting cryptocurrency payments on their woocommerce website by simply installing the plugin. AtomicPay is a decentralized cryptocurrency payment processor that eliminates the involvement of a third-party payment gateway, allowing merchants to accept payments directly from their customers, in a secured and trustless environment.
 
+AtomicPay for WooCommerce Plugin is now listed in Wordpress Plugin Directory. Merchants may install directly from your Wordpress Admin Panel or visit https://wordpress.org/plugins/atomicpay-for-woocommerce or manually install using the instructions below.
+
 ## Prerequisites
 * Last Version Tested: Wordpress 5.0.1 WooCommerce 3.5.2
 

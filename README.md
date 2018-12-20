@@ -7,7 +7,7 @@ This is an open source plugin for WooCommerce, allowing merchants to start accep
 
 ## Server Requirements
 
-* [Wordpress](https://wordpress.org/about/requirements/) >= 4.3
+* [Wordpress](https://wordpress.org/about/requirements/) >= 3.9
 * [WooCommerce](http://docs.woothemes.com/document/server-requirements/) >= 2.4
 * [GMP](http://php.net/manual/en/book.gmp.php) or [BCMath](http://php.net/manual/en/book.bc.php) You may have to install GMP as most servers do not come with it, but generally BCMath is already included.
 * [OpenSSL](http://us2.php.net/openssl) Must be compiled with PHP

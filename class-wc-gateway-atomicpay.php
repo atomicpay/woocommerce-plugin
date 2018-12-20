@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 /*
     Plugin Name: AtomicPay for WooCommerce
-    Plugin URI:  https://github.com/atomicpay/woocommerce-plugin/releases/tag/v1.0.3
+    Plugin URI:  https://wordpress.org/plugins/atomicpay-for-woocommerce
     Description: Enable your WooCommerce store to accept cryptocurrency payments with AtomicPay.
     Author:      AtomicPay
     Text Domain: AtomicPay.io

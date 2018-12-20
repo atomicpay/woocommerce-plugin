@@ -61,11 +61,11 @@ Next, we will need you to select a default **Transaction Speed** value. `HIGH Ri
 ![Transaction Speed](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-4.png)
 
 #### Order Status
-Here you You can configure how AtomicPay's IPN (Instant Payment Notifications) trigger the various order states in your WooCommerce store. You may leave it as our default values which are common values for majority of stores.
+Here you can configure how AtomicPay's IPN (Instant Payment Notifications) trigger the various order states in your WooCommerce store. You may leave it as our default values which are common values for majority of stores.
 
 ![Order States](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-6.png)
 
-Once selected, click **Save Changes** at the bottom of the page. Congrats your plugin is activated and the Pay with AtomicPay option will be available during your customer checkout process.
+Once configurated, click **Save Changes** at the bottom of the page. Congrats your plugin is activated and the Pay with AtomicPay option will be available during your customer checkout process.
 
 ![Save Changes](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/step-5.png)
 

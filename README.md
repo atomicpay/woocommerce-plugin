@@ -35,7 +35,7 @@ Authorization Pairing can be performed using the Administrator section of Wordpr
 Once logged in, you can find the configuration settings under **WooCommerce > Settings > Payments > AtomicPay**.
 
 #### STEP 1
-Login to your [AtomicPay Merchant Account](https://merchant.atomicpay.io/login) and go to [API Integration](https://merchant.atomicpay.io/apiIntegration) page. You will need the following vvalues for next step: `ACCOUNT ID`, `PRIVATE KEY` and `PUBLIC KEY`.
+Login to your [AtomicPay Merchant Account](https://merchant.atomicpay.io/login) and go to [API Integration](https://merchant.atomicpay.io/apiIntegration) page. You will need the following values for next step: `ACCOUNT ID`, `PRIVATE KEY` and `PUBLIC KEY`.
 
 ![API Keys](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/getting-keys.png)
 

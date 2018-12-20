@@ -25,6 +25,8 @@ Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) p
 
 **WARNING:** It is good practice to backup your databases before installing plugins. Please make sure you have created backups.
 
+[![Video - Step by Step Installation For WooCommerce Plugin](https://img.youtube.com/vi/AO7Hdkdwr5s/0.jpg)](https://www.youtube.com/watch?v=AO7Hdkdwr5s)
+
 ## Authorization Pairing
 Authorization Pairing can be performed using the Administrator section of Wordpress.
 Once logged in, you can find the configuration settings under **WooCommerce > Settings > Payments > AtomicPay**.

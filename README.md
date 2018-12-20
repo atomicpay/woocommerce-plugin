@@ -27,6 +27,7 @@ Visit the [Releases](https://github.com/atomicpay/woocommerce-plugin/releases) p
 
 ### Youtube Video - Step by Step Installation
 Click on the image to view our installation video
+
 [![Video - Step by Step Installation For WooCommerce Plugin](https://github.com/atomicpay/woocommerce-plugin/blob/master/templates/images/video.png)](https://www.youtube.com/watch?v=AO7Hdkdwr5s)
 
 ## Authorization Pairing

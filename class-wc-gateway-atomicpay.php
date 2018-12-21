@@ -1121,11 +1121,6 @@ function woocommerce_atomicpay_failed_requirements()
         $errors[] = 'Your WooCommerce version is too old. The AtomicPay payment plugin requires WooCommerce 2.2 or higher to function. Your version is '.$woocommerce->version.'. Please contact your web server administrator for assistance.';
     }
 
-    // GMP or BCMath required
-    if (false === extension_loaded('gmp') && false === extension_loaded('bcmath')) {
-        $errors[] = 'The AtomicPay payment plugin requires the GMP or BC Math extension for PHP in order to function. Please contact your web server administrator for assistance.';
-    }
-
     // Curl required
     if (false === extension_loaded('curl')) {
         $errors[] = 'The AtomicPay payment plugin requires the Curl extension for PHP in order to function. Please contact your web server administrator for assistance.';

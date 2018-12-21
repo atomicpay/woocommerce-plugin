@@ -11,7 +11,6 @@ AtomicPay for WooCommerce Plugin is now listed in Wordpress Plugin Directory. Me
 
 * [Wordpress](https://wordpress.org/about/requirements/) >= 3.9
 * [WooCommerce](http://docs.woothemes.com/document/server-requirements/) >= 2.4
-* [GMP](http://php.net/manual/en/book.gmp.php) or [BCMath](http://php.net/manual/en/book.bc.php) You may have to install GMP as most servers do not come with it, but generally BCMath is already included.
 * [OpenSSL](http://us2.php.net/openssl) Must be compiled with PHP
 * [PHP5 Curl](http://php.net/manual/en/curl.installation.php) Must be compiled with PHP
 * PHP >= 5.4 (Tested on v7.1)
@@ -73,47 +72,6 @@ Once configurated, click **Save Changes** at the bottom of the page. Congrats yo
 
 ## Usage
 Once activated, your customers will be given the option to pay via AtomicPay which will redirect them to AtomicPay checkout UI to complete the payment. On your WooCommerce backend, everything remains the same as how you would use other payment processors such as PayPal, etc. AtomicPay is designed to be an addtional option on top of the existing payment options which you are already offering. That will be no conflicts with other plugins.
-
-## Installing GMP extension for PHP
-You may have to install GMP as most servers do not come with it. It is required that you install the GMP extension for PHP to achieve maximum performance when using this plugin. Below is a simple guide. If you do not have knowledge on server, please contact your hosting company to have it installed and activated.
-
-### Compile PHP with GMP
-
-[http://php.net/manual/en/gmp.installation.php](http://php.net/manual/en/gmp.installation.php)
-
-### Enable Extension
-
-If the extension has been included with your PHP install, you only need to uncomment the line in the PHP ini configuration file.
-
-**On Windows:**
-
-```ini
-; From
-;extension=php_gmp.dll
-; To
-extension=php_gmp.dll
-```
-
-**For Ubuntu:**
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install php5-gmp
-$ sudo php5enmod gmp
-
-# Restart your server
-```
-
-**For Other Linux Systems:**
-
-```ini
-; From
-;extension=gmp.so
-; To
-extension=gmp.so
-
-# Restart your server
-```
 
 ## Troubleshooting and Debugging
 AtomicPay for WooCommerce Plugin is designed with an easy-to-understand and detailed debug logging feature. In the event where you experience issues or bugs, please activate the Debug Log option and replicate the issue. Click on View Logs and you will be able to detect any events associated with [Error]. Open an issue with your debug logs by following our [Bug Reporting Guidelines](CONTRIBUTING.md#bugs)

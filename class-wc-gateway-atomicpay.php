@@ -656,7 +656,7 @@ function woocommerce_atomicpay_init()
                 	$atm_redirect_url = $result_array->redirect_url;
                 	$atm_status = $result_array->status;
                 	$atm_statusException = $result_array->statusException;
-                	$atm_payment_rate = "$atm_payment_rate $atm_order_currency";
+                	if($atm_payment_rate != ""){ $atm_payment_rate = "$atm_payment_rate $atm_order_currency"; }
 
                     $this->log('[Info] The Invoice ID is valid.');
 
@@ -1002,8 +1002,6 @@ function woocommerce_atomicpay_init()
               CURLOPT_RETURNTRANSFER => true,
               CURLOPT_POSTFIELDS => $data_to_post,
             ];
-
-
 
             $curl = curl_init();
             curl_setopt_array($curl, $options);

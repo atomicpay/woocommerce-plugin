@@ -1101,9 +1101,6 @@ function woocommerce_atomicpay_failed_requirements()
     global $woocommerce;
 
     $errors = array();
-    if (extension_loaded('openssl')  === false){
-        $errors[] = 'The AtomicPay payment plugin requires the OpenSSL extension for PHP in order to function. Please contact your web server administrator for assistance.';
-    }
     // PHP 5.4+ required
     if (true === version_compare(PHP_VERSION, '5.4.0', '<')) {
         $errors[] = 'Your PHP version is too old. The AtomicPay payment plugin requires PHP 5.4 or higher to function. Please contact your web server administrator for assistance.';

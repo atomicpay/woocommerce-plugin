@@ -4,6 +4,16 @@ This is an open source plugin for WooCommerce, allowing merchants to start accep
 
 AtomicPay for WooCommerce Plugin is now listed in Wordpress Plugin Directory. Merchants may install directly from your Wordpress Admin Panel or visit https://wordpress.org/plugins/atomicpay-for-woocommerce or manually install using the instructions below.
 
+#### Follow us on our developments
+We develop things in lightning speed! If you would like to keep up with what we are building or our upcoming cool features, please follow us on AtomicPay Official Channels:
+* [Official Twitter](https://twitter.com/AtomicPay)
+* [Official Facebook](https://www.facebook.com/atomicpay)
+* [Official Instagram](https://instagram.com/atomicpay.io/)
+* [Official YouTube](https://www.youtube.com/channel/UCm8tPvdxi8PA97ZMIINYjZQ)
+* [Official Reddit](https://www.reddit.com/r/atomicpay)
+* [Official Telegram](https://t.me/atomicpay)
+* And obviously, please follow us on [Official Github](https://github.com/atomicpay)
+
 ## Prerequisites
 * Last Version Tested: Wordpress 5.0.1 WooCommerce 3.5.2
 

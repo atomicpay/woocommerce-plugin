@@ -11,7 +11,6 @@ AtomicPay for WooCommerce Plugin is now listed in Wordpress Plugin Directory. Me
 
 * [Wordpress](https://wordpress.org/about/requirements/) >= 3.9
 * [WooCommerce](http://docs.woothemes.com/document/server-requirements/) >= 2.4
-* [OpenSSL](http://us2.php.net/openssl) Must be compiled with PHP
 * [PHP5 Curl](http://php.net/manual/en/curl.installation.php) Must be compiled with PHP
 * PHP >= 5.4 (Tested on v7.1)
 

@@ -17,7 +17,7 @@ We develop in lightning speed! If you would like to keep up with what we are bui
 Meanwhile, here is a short deck to learn more about AtomicPay: https://www.slideshare.net/atomicpay/atomicpay-decentralized-noncustodial-payment-gateway-126944216
 
 ## Prerequisites
-* Last Version Tested: Wordpress 5.0.1 WooCommerce 3.5.2
+* Last Version Tested: Wordpress 5.0.1 WooCommerce 3.5.4
 
 ## Server Requirements
 

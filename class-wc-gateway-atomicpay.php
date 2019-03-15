@@ -11,7 +11,7 @@ ini_set('display_errors', 1);
 	* WC requires at least: 2.4
 	* WC tested up to: 3.5.2
 
-    Version:           1.0.5
+    Version:           1.0.6
     License:           Copyright 2018 AtomicPay, MIT License
     License URI:       https://github.com/atomicpay/woocommerce-plugin/blob/master/LICENSE
     GitHub Plugin URI: https://github.com/atomicpayserver/woocommerce-plugin
@@ -24,7 +24,7 @@ if (false === defined('ABSPATH'))
     exit;
 }
 
-define("ATOMICPAY_VERSION", "1.0.5");
+define("ATOMICPAY_VERSION", "1.0.6");
 
 // Ensure that WooCommerce is loaded
 add_action('plugins_loaded', 'woocommerce_atomicpay_init', 0);
@@ -1147,7 +1147,7 @@ function woocommerce_atomicpay_activate()
 
         foreach ($plugins as $file => $plugin)
         {
-			if ('AtomicPay for WooCommerce' === $plugin['Name'] && true === is_plugin_active($file) && (0 > version_compare( $plugin['Version'], '1.0.5' )))
+			if ('AtomicPay for WooCommerce' === $plugin['Name'] && true === is_plugin_active($file) && (0 > version_compare( $plugin['Version'], '1.0.6' )))
 			{
                 deactivate_plugins(plugin_basename(__FILE__));
                 wp_die('AtomicPay for WooCommerce requires the older version of this plugin to be deactivated. <br><a href="'.$plugins_url.'">Return to plugins screen</a>');

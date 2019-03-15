@@ -220,7 +220,7 @@ function woocommerce_atomicpay_init()
                         'medium'  => 'Medium Risk (2 Confirmations)',
                         'low'  => 'Low Risk (6 Confirmations)'
                     ),
-                    'default' => 'default',
+                    'default' => 'high',
                     'desc_tip'    => true,
                ),
                 'order_statuses' => array(
